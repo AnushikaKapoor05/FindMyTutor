@@ -1,0 +1,81 @@
+/* Navbar Container */
+.navbar {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.nav-logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1F305E;
+    background-color: white;
+    margin-left: 18px;
+    padding: 12px 12px;
+    border-radius: 5px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1F305E;
+    padding: 10px 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: #E0EDFF;
+    color: #1F305E;
+}
+
+/* Buttons */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Unified Button Style */
+.nav-btn {
+    background-color: white;
+    color: #1F305E;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #1F305E;
+}
+
+.nav-btn:hover {
+    background-color: #E0EDFF;
+    color: #1F305E;
+    cursor: pointer;
+}
+
+/* Profile Icon */
+.profile-icon {
+    font-size: 20px;
+    padding: 8px 15px;
+}

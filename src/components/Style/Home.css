@@ -1,0 +1,194 @@
+body, html {
+  
+  padding: 0px;
+  height:100vh;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: white; /* Ensures full-page white background */
+}
+
+/* Container Sizing for MacBook 13" */
+.homepage {
+  max-width: 1800px;
+  margin: 0%;
+  /*padding: 20px;*/
+  margin-top: -45%;
+  margin-bottom: 2px;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1F305E; /* Deep Blue */
+  padding: 0px;
+  border-radius: 12px;
+  height: 20%;
+}
+
+.hero-text {
+  flex: 1;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hero-text .highlight {
+  color: #E57373; /* Red highlight */
+}
+
+.hero-image {
+  width: 280px;
+  height: auto;
+}
+
+/* Explore Courses Section */
+.explore-courses {
+  background-color: white;
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: -50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.course-card {
+  padding: 20px;
+  border: 2px solid #1F305E;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: white;
+}
+
+/* Explore Button */
+.explore-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #1F305E;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #324A78;
+}
+.book-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9; /* Light background */
+  width: 100%; /* Expand to full width */
+}
+
+.book-demo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 30px;
+  width: 500% !important; /* Increase width */
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-demo-text {
+  flex: 1;
+  text-align: left !important;
+}
+
+.book-demo h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #566120; /* Olive green */
+  text-align: left !important;
+}
+
+.book-demo .highlight {
+  color: #d9534f; /* Red */
+}
+
+.book-demo p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.demo-button {
+  background-color: #b24c42; /* Dark red */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.demo-button:hover {
+  background-color: #993d36;
+}
+
+.book-demo-image img {
+  width: 220px; /* Increase image size */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .book-demo-container {
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+  }
+
+  .book-demo-image img {
+    margin-top: 20px;
+    width: 180px; /* Adjust for small screens */
+  }
+}
+
+/* Demo Button */
+.demo-button {
+  display: inline-block;
+  background-color: #B94A48;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.demo-button:hover {
+  background-color: #D9534F;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+.homepage,
+
+.explore-courses,
+.book-demo,
+.footer {
+  background-color: white !important;
+}

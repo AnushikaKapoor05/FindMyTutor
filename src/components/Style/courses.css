@@ -1,0 +1,104 @@
+body, html {
+    background-color: white !important;
+   
+}
+.courses-container {
+    margin-top: -50%;
+    padding-top: 10px; /* Prevents overlap */
+    width: 100%;
+    text-align: center;
+    background: white !important; /* Ensuring strict white background */
+}
+
+/* Grid layout for course cards */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    justify-content: center;
+    align-items: stretch; /* Ensures uniform height */
+    width: 100%;
+}
+
+/* Individual Course Card */
+.grid-card {
+    background:#e86d5a;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    border: 2px solid #90CAF9; /* Medium Blue Border */
+    min-height: 250px; /* Ensures uniform card height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.courses-container h1 {
+    font-size: 2.5rem!important;
+    font-weight: bold!important;
+    color: #1976D2 !important; /* Deep Blue */
+    margin-bottom: 30px!important;
+    position: relative!important;
+    display: inline-block!important;
+    text-decoration: underline!important; /* Add underline */
+}
+
+/* Fix for text alignment */
+.grid-card h3 {
+    color: #1976D2; /* Deep Blue */
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.grid-card h5 {
+    color: #1565C0; /* Slightly Darker Blue */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.grid-card p {
+    color: #5C6BC0; /* Soft Blue */
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.grid-card:hover {
+    background: #BBDEFB; /* Lighter Blue on Hover */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Enroll Button */
+.enroll-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1E88E5; /* Vibrant Blue for CTA */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.enroll-button:hover {
+    background-color: #0D47A1; /* Darker Blue on Hover */
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+    }
+}
